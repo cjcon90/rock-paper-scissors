@@ -19,7 +19,7 @@ p {
 
 .scoreboard {
     display: flex;
-    width: 80%;
+    width: 95%;
     margin: auto;
     flex-direction: row;
     justify-content: space-between;
@@ -31,9 +31,14 @@ p {
     text-align: center;
     font-size: 1.2em;
     width: 400px;
+    height: 120px;
     border:dashed 2px #41403E;
-
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+#result-div {
+    width: 800px;
+    font-size: 1.4em;
 }
 
 .game {
@@ -45,7 +50,7 @@ p {
     "lpaper rpaper"
     "lscissors rscissors";
     width: 100%;
-    max-width: 780px;
+    max-width: 768px;
     margin: auto;
     gap: 15px;
     overflow: hidden;
@@ -58,7 +63,6 @@ p {
 .left-img {
     float: left;
     position: relative;
-    right: 200px;
 }
 
 .left-img:hover {
@@ -68,7 +72,6 @@ p {
 .right-img {
     float: right;
     position: relative;
-    left: 200px;
 }
 
 #lrock {
@@ -92,4 +95,50 @@ p {
 #rscissors {
     grid-area: rscissors;
     padding-top: 40px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    html {
+        font-size: 0.7rem;
+    }
+
+    .score {
+        height: 150px;
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    html {
+        font-size: 0.5rem;
+    }
+
+    .score {
+        height: 150px;
+    }
+
+
+
+
+    .game {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "lrock"
+        "rrock"
+        "lpaper"
+        "rpaper"
+        "lscissors"
+        "rscissors";
+    }
+
+
 }
