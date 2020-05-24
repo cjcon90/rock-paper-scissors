@@ -31,7 +31,7 @@ p {
     text-align: center;
     font-size: 1.2em;
     width: 400px;
-    height: 120px;
+    height: 150px;
     border:dashed 2px #41403E;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
@@ -97,6 +97,15 @@ p {
     padding-top: 40px;
 }
 
+/* Text fixs for smaller screens */
+
+@media only screen and (max-width: 1500px) {
+
+    .score {
+        height: 250px;
+    }
+}
+
 
 @media only screen and (max-width: 800px) {
 
@@ -113,6 +122,8 @@ p {
 
 
 }
+
+/* redesigned game grid for mobile */
 
 @media only screen and (max-width: 750px) {
 
