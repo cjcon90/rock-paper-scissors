@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Knewave', cursive;
+    font-size: 2em;
+    text-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);;
+}
+
+p {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.scoreboard {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2em;
+}
+
+
+.score {
+    text-align: center;
+    font-size: 1.2em;
+    width: 400px;
+    border:dashed 2px #41403E;
+
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "lrock rrock"
+    "lpaper rpaper"
+    "lscissors rscissors";
+    width: 100%;
+    max-width: 780px;
+    margin: auto;
+    gap: 15px;
+    overflow: hidden;
+    margin-top: 25px;
+    border:solid 7px #41403E;
+    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.left-img {
+    float: left;
+    position: relative;
+    right: 200px;
+}
+
+.left-img:hover {
+    right:0;
+}
+
+.right-img {
+    float: right;
+    position: relative;
+    left: 200px;
+}
+
+#lrock {
+    grid-area: lrock;
+    padding-top: 10px;
+}
+#lpaper {
+    grid-area: lpaper;
+}
+#lscissors {
+    grid-area: lscissors;
+    padding-top: 40px;
+}
+#rrock {
+    grid-area: rrock;
+    padding-top: 10px;
+}
+#rpaper {
+    grid-area: rpaper;
+}
+#rscissors {
+    grid-area: rscissors;
+    padding-top: 40px;
+}
