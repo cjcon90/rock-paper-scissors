@@ -15,6 +15,9 @@ header {
 
 p {
     font-family: 'Gloria Hallelujah', cursive;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2em;
 }
 
 .scoreboard {
@@ -31,7 +34,7 @@ p {
     text-align: center;
     font-size: 1.2em;
     width: 400px;
-    height: 150px;
+    height: auto;
     border:dashed 2px #41403E;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
@@ -101,9 +104,7 @@ p {
 
 @media only screen and (max-width: 1500px) {
 
-    .score {
-        height: 250px;
-    }
+
 }
 
 
@@ -111,10 +112,6 @@ p {
 
     html {
         font-size: 0.7rem;
-    }
-
-    .score {
-        height: 150px;
     }
 
 
@@ -127,13 +124,7 @@ p {
 
 @media only screen and (max-width: 750px) {
 
-    html {
-        font-size: 0.5rem;
-    }
 
-    .score {
-        height: 150px;
-    }
 
 
 

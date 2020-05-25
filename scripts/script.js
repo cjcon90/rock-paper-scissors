@@ -18,28 +18,27 @@ let winner = '';
 
 
 
-
 // Player Selection-----------------------
 function play() {
     playerRock.addEventListener('click', function () {
-        game('rock');
         playerChoice = "Rock";
+        game('rock');
         playerRockImg.style.right = "0px"
         playerPaperImg.style.right = "50%"
         playerScissorsImg.style.right = "50%"
     })
 
     playerPaper.addEventListener('click', function () {
-        game('paper');
         playerChoice = "Paper";
+        game('paper');
         playerRockImg.style.right = "50%"
         playerPaperImg.style.right = "0px"
         playerScissorsImg.style.right = "50%"
     })
 
     playerScissors.addEventListener('click', function () {
-        game('scissors');
         playerChoice = "Scissors";
+        game('scissors');
         playerRockImg.style.right = "50%"
         playerPaperImg.style.right = "50%"
         playerScissorsImg.style.right = "0px"
@@ -47,7 +46,7 @@ function play() {
 
 }
 
-play();
+
 
 
 
@@ -111,7 +110,7 @@ function game(playerWeapon) {
 
 function win() {
     winner = "Yay! You win!!";
-    userScore++
+    userScore++;
     userCounter.innerHTML = userScore;
     scoreboard.innerHTML = playerChoice + " vs " + computerChoice + ": " + winner;
 }
@@ -123,7 +122,11 @@ function draw() {
 
 function lose() {
     winner = "Sorry, you lose....";
-    computerScore++
+    computerScore++;
     computerCounter.innerHTML = computerScore;
     scoreboard.innerHTML = playerChoice + " vs " + computerChoice + ": " + winner;
 }
+
+console.log(playerChoice)
+console.log(userScore);
+console.log(computerScore);
