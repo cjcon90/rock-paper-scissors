@@ -102,17 +102,30 @@ p {
 
 /* Text fixs for smaller screens */
 
-@media only screen and (max-width: 1500px) {
-
-
-}
-
 
 @media only screen and (max-width: 800px) {
 
     html {
         font-size: 0.7rem;
     }
+
+    #left-score {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #left-score {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
+
 
 
 
@@ -124,9 +137,14 @@ p {
 
 @media only screen and (max-width: 750px) {
 
-
-
-
+    .score {
+        margin: 5px;
+        font-size: 1em;
+    }
+    
+    #result {
+        font-size: .8em;
+    }
 
 
     .game {
@@ -140,6 +158,24 @@ p {
         "rpaper"
         "lscissors"
         "rscissors";
+        gap: 0;
+    }
+
+    .l-img-div,
+    .r-img-div {
+        padding: 0;
+        margin: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    #rscissors,
+    #lscissors {
+    padding-top: 0;
+    }
+    
+    img {
+        width: 90%;
     }
 
 
