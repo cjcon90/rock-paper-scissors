@@ -137,9 +137,18 @@ p {
 
 @media only screen and (max-width: 750px) {
 
+    .scoreboard {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        
+    }
+
     .score {
         margin: 5px;
         font-size: 1em;
+        background-color: rgba(255, 255, 255, 0.7);
     }
     
     #result {
